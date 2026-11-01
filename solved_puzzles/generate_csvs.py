@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Build one CSV per solved Bitcoin puzzle (the 2015 "1000 BTC" puzzle transaction).
+"""Build one CSV of all solved Bitcoin puzzles (the 2015 "1000 BTC" puzzle transaction).
 
 Input : sources/puzzles.json  (compiled from public GitHub datasets, see README.md)
-Output: puzzle_NNN.csv for every solved puzzle, plus index.csv
+Output: solved_puzzles.csv (one row per solved puzzle)
 
-Nothing is trusted blindly. Before a CSV is written, every solved puzzle is
+Nothing is trusted blindly. Before the CSV is written, every solved puzzle is
 re-verified here with pure-Python secp256k1 arithmetic:
 
   1. the private key lies in the puzzle's range [2^(n-1), 2^n - 1]
@@ -27,6 +27,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SOURCE_JSON = os.path.join(HERE, "sources", "puzzles.json")
+OUT_CSV = os.path.join(HERE, "solved_puzzles.csv")
 
 # Where to point readers. mempool.space is used for on-chain evidence; swap the
 # prefix if you prefer another explorer (blockstream.info uses the same paths).
@@ -197,37 +198,46 @@ def verify(r):
     return h160
 
 
-def first(txs, kind):
-    hits = sorted((t for t in txs if t["type"] == kind), key=lambda t: t["date"])
-    return hits[0] if hits else None
-
-
 def build_row(r, h160):
     n = r["puzzle"]
-    claim = first(r["transactions"], "claim")
-    reveal = first(r["transactions"], "pubkeyReveal")
-    if reveal and reveal["date"] < claim["date"]:
-        pk_tx, pk_how = reveal, "revealed on chain before the solve"
-    else:
-        pk_tx, pk_how = claim, "revealed on chain by the solver's sweep (first spend)"
+    txs = sorted(r["transactions"], key=lambda t: t["date"])
+    # Puzzle start = the 2015 puzzle tx. (agntn labels a 2013 deposit to the
+    # key-1 address as "funding"; that predates the puzzle.)
+    funded_at = next(t["date"] for t in txs if t["txid"] == FUNDING_TXID)
+    # A P2PKH spend puts the pubkey in its scriptSig, so every spend from the
+    # address is a pubkey reveal. The solve is the first spend after funding;
+    # earlier spends (e.g. key 1 was used in 2013) and the creator's 2019
+    # reveal txs count as "before the solve".
+    claim = next(t for t in txs if t["type"] == "claim" and t["date"] >= funded_at)
+    before = [t for t in txs if t["date"] < claim["date"] and
+              (t["type"] == "pubkeyReveal" or (t["type"] == "claim" and t["date"] < funded_at))]
+    after = [t for t in txs if t["type"] == "claim" and t["date"] > claim["date"]]
     announce = next((f["url"] for f in r["facts"] if f["text"].startswith("Announced")), None)
     solver_link = announce or SOLVER_PROFILE.get(r["solver"]) or ADDR_URL.format(r["address"])
-    funding_btc = sum(float(t["amount_btc"]) for t in r["transactions"] if t["type"] in ("funding", "increase"))
+    funding_btc = sum(float(t["amount_btc"]) for t in txs
+                      if t["type"] in ("funding", "increase") and t["date"] >= funded_at)
     tx = TX_URL.format
+    addr_link = ADDR_URL.format(r["address"])
+    first_seen = before[0] if before else claim
     row = [
         ("puzzle", n, tx(FUNDING_TXID)),
-        ("address", r["address"], ADDR_URL.format(r["address"])),
+        ("address", r["address"], addr_link),
         ("hash160", h160, SCRIPT_URL),
         ("key_range", f"2^{n-1} .. 2^{n}-1", SCRIPT_URL),
-        ("public_key", r["public_key"], tx(pk_tx["txid"])),
-        ("public_key_onchain", f"{pk_how} ({pk_tx['date']} UTC)", tx(pk_tx["txid"])),
+        ("public_key", r["public_key"], tx(first_seen["txid"])),
+        ("public_key_first_seen_utc", first_seen["date"], tx(first_seen["txid"])),
+        ("public_key_revealed_before_solve", r["public_key"] if before else "", tx(before[0]["txid"]) if before else addr_link),
+        ("public_key_revealed_before_solve_utc", before[0]["date"] if before else "", tx(before[0]["txid"]) if before else addr_link),
+        ("public_key_revealed_after_solve", r["public_key"], tx(claim["txid"])),
+        ("public_key_revealed_after_solve_utc", claim["date"], tx(claim["txid"])),
+        ("public_key_later_spend_txids", " ".join(t["txid"] for t in after), tx(after[0]["txid"]) if after else addr_link),
         ("private_key_hex", r["private_key_hex"], tx(claim["txid"])),
         ("private_key_wif", r["private_key_wif"], SCRIPT_URL),
         ("private_key_verified", "yes: in range, k*G == public_key, HASH160 -> address, WIF round-trips", SCRIPT_URL),
         ("solved_at_utc", claim["date"], tx(claim["txid"])),
         ("claim_txid", claim["txid"], tx(claim["txid"])),
-        ("prize_btc", r["prize_btc"], ADDR_URL.format(r["address"])),
-        ("funded_btc_total", f"{funding_btc:.8f}".rstrip("0").rstrip("."), ADDR_URL.format(r["address"])),
+        ("prize_btc", r["prize_btc"], addr_link),
+        ("funded_btc_total", f"{funding_btc:.8f}".rstrip("0").rstrip("."), addr_link),
         ("solver", r["solver"] or "unknown", solver_link),
         ("data_source", "agntn/puzzles bits/%d.ts (cross-checked, see README)" % n, AGNTN_URL.format(n)),
     ]
@@ -244,18 +254,13 @@ def main():
     built = []
     for r in rows:
         h160 = verify(r)  # raises on any mismatch -> nothing gets written
-        built.append((r, build_row(r, h160)))
-    for r, (header, values) in built:
-        with open(os.path.join(HERE, "puzzle_%03d.csv" % r["puzzle"]), "w", newline="") as fh:
-            w = csv.writer(fh)
-            w.writerow(header)
-            w.writerow(values)
-    with open(os.path.join(HERE, "index.csv"), "w", newline="") as fh:
+        built.append(build_row(r, h160))
+    with open(OUT_CSV, "w", newline="") as fh:
         w = csv.writer(fh)
-        w.writerow(built[0][1][0])
-        for _, (_, values) in built:
+        w.writerow(built[0][0])
+        for _, values in built:
             w.writerow(values)
-    print(f"verified and wrote {len(built)} puzzle CSVs + index.csv")
+    print(f"verified {len(built)} solved puzzles and wrote {os.path.basename(OUT_CSV)}")
 
 
 if __name__ == "__main__":
