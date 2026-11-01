@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Build one CSV of all solved Bitcoin puzzles (the 2015 "1000 BTC" puzzle transaction).
 
-Input : sources/puzzles.json  (compiled from public GitHub datasets, see README.md)
+Input : sources/puzzles.json      (keys, addresses, txids; compiled from public GitHub datasets)
+        sources/attribution.json  (solver and method per puzzle, each with a cited source)
 Output: solved_puzzles.csv (one row per solved puzzle)
 
 Nothing is trusted blindly. Before the CSV is written, every solved puzzle is
@@ -27,6 +28,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SOURCE_JSON = os.path.join(HERE, "sources", "puzzles.json")
+ATTRIBUTION_JSON = os.path.join(HERE, "sources", "attribution.json")
 OUT_CSV = os.path.join(HERE, "solved_puzzles.csv")
 
 # Where to point readers. mempool.space is used for on-chain evidence; swap the
@@ -35,8 +37,6 @@ TX_URL = "https://mempool.space/tx/{}"
 ADDR_URL = "https://mempool.space/address/{}"
 SCRIPT_URL = "https://github.com/k290/RCKangaroo/blob/claude/tender-gauss-5jro04/solved_puzzles/generate_csvs.py"
 AGNTN_URL = "https://github.com/agntn/puzzles/blob/main/src/collections/bits/{}.ts"
-# Public profile where a named solver lists the puzzles they solved.
-SOLVER_PROFILE = {"RetiredCoder": "https://github.com/RetiredC"}
 # Transaction of 2015-01-15 that created all 256 puzzle outputs (#1..#256).
 FUNDING_TXID = "08389f34c98c606322740c0be6a7125d9860bb8d5cb182c02f98461e5fa6cd15"
 
@@ -198,7 +198,18 @@ def verify(r):
     return h160
 
 
-def build_row(r, h160):
+def attribution_columns(attr, links):
+    """Solver/method columns from sources/attribution.json; evidence links may
+    be placeholders ({address_page}, {reveal_tx}, {claim_tx}) resolved here."""
+    cols = []
+    for name in ("solver", "solver_notes", "method", "method_basis"):
+        value = attr.get(name, "")
+        link = attr.get(name + "_evidence") or attr.get("method_evidence", "")
+        cols.append((name, value, link.format(**links) if value else ""))
+    return cols
+
+
+def build_row(r, h160, attr):
     n = r["puzzle"]
     txs = sorted(r["transactions"], key=lambda t: t["date"])
     # Puzzle start = the 2015 puzzle tx. (agntn labels a 2013 deposit to the
@@ -212,8 +223,6 @@ def build_row(r, h160):
     before = [t for t in txs if t["date"] < claim["date"] and
               (t["type"] == "pubkeyReveal" or (t["type"] == "claim" and t["date"] < funded_at))]
     after = [t for t in txs if t["type"] == "claim" and t["date"] > claim["date"]]
-    announce = next((f["url"] for f in r["facts"] if f["text"].startswith("Announced")), None)
-    solver_link = announce or SOLVER_PROFILE.get(r["solver"]) or ADDR_URL.format(r["address"])
     funding_btc = sum(float(t["amount_btc"]) for t in txs
                       if t["type"] in ("funding", "increase") and t["date"] >= funded_at)
     tx = TX_URL.format
@@ -238,7 +247,11 @@ def build_row(r, h160):
         ("claim_txid", claim["txid"], tx(claim["txid"])),
         ("prize_btc", r["prize_btc"], addr_link),
         ("funded_btc_total", f"{funding_btc:.8f}".rstrip("0").rstrip("."), addr_link),
-        ("solver", r["solver"] or "unknown", solver_link),
+        *attribution_columns(attr, {
+            "address_page": addr_link,
+            "reveal_tx": tx(before[-1]["txid"]) if before else addr_link,
+            "claim_tx": tx(claim["txid"]),
+        }),
         ("data_source", "agntn/puzzles bits/%d.ts (cross-checked, see README)" % n, AGNTN_URL.format(n)),
     ]
     header = []
@@ -251,10 +264,11 @@ def build_row(r, h160):
 
 def main():
     rows = [r for r in json.load(open(SOURCE_JSON)) if r["solved"]]
+    attribution = json.load(open(ATTRIBUTION_JSON))
     built = []
     for r in rows:
         h160 = verify(r)  # raises on any mismatch -> nothing gets written
-        built.append(build_row(r, h160))
+        built.append(build_row(r, h160, attribution[str(r["puzzle"])]))
     with open(OUT_CSV, "w", newline="") as fh:
         w = csv.writer(fh)
         w.writerow(built[0][0])

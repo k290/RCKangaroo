@@ -19,12 +19,51 @@ transaction (#1–#70 and #75, #80 … #135). **Every value column is followed b
 | `private_key_verified` | result of the local cryptographic check | `generate_csvs.py` |
 | `solved_at_utc` / `claim_txid` | first spend after the 2015 puzzle tx | sweep tx |
 | `prize_btc` / `funded_btc_total` | nominal prize / sum of puzzle funding txs (2015 onward) | address page |
-| `solver` | named solver, if one is publicly known | their announcement or profile, otherwise the address page |
+| `solver` | who found the key: a name if one is public, otherwise the address the prize went to | the attribution source (see below) |
+| `solver_notes` | context: other credited parties, front-running, solver totals | its source |
+| `method` | how the key was found | the source for the method, or the on-chain fact it is inferred from |
+| `method_basis` | **stated** (the solver or tool author says so), **reported** (third party), or **inferred** (follows from what was on chain) | same as `method` |
 | `data_source` | where the tx metadata came from | the source file on GitHub |
 
 A P2PKH spend must put a pubkey whose HASH160 equals the address into its scriptSig. So
 `public_key_revealed_after_solve` is fixed by the math: it can only be the verified key below.
 Only the txid and date of the sweep come from the source data.
+
+## Solver attribution and method
+
+These come from `sources/attribution.json`, which is hand-curated. Every claim cites one source.
+
+| puzzles | solver | method | basis |
+|---|---|---|---|
+| #1–#39, #47–#50 | unnamed; the prize address prefix is given | brute force (tiny ranges, swept 2015) | inferred |
+| #40–#46 | unknown (no source lists one) | brute force | inferred |
+| #51–#54 | Large Bitcoin Collider pool | distributed brute force | reported (LBC trophies page) |
+| #55–#58, #62, #64 | unnamed | brute force | inferred (#64 also in Matthew Green's records) |
+| #59, #60, #61, #63 | zielar | BitCrack on GPUs, ~248 Gkeys/s, up to ~100 Tesla GPUs | reported (albert0bsd, bitcointalk 2021) |
+| #65, #95, #100 | unnamed | ECDLP on the 2019-exposed pubkey (kangaroo/BSGS) | inferred |
+| #66, #69 | unnamed finder addresses; both claims were front-run by bots | brute force | inferred |
+| #67, #68 | Kowala | brute force; claims mined privately | inferred |
+| #70–#90 | pikachunakapika | ECDLP on the 2019-exposed pubkey | inferred |
+| #105 | 57fe | ECDLP, probably kangaroo (57fe publishes a GPU kangaroo) | inferred |
+| #110, #115 | zielar with Jean-Luc Pons | JeanLucPons/Kangaroo on 256 Tesla V100 (2.1 d / 13 d) | stated (Kangaroo README) |
+| #120, #125, #130 | RetiredCoder | Pollard kangaroo, own GPU code | reported |
+| #135 | RetiredCoder | RCKangaroo with ASM kernels, ~200 GPUs for ~5 months | stated (bitcointalk) |
+
+"Brute force, inferred" rests on cryptography, not on anyone's word. If no public key was on chain
+before the solve, ECDLP methods (kangaroo, BSGS) had nothing to work on. The only option was to
+hash candidate keys and compare each with the address.
+
+**Attribution sources:**
+- **Named solvers:** privatekeys.pw. I read it from a GitHub mirror of the page
+  ([Cryptographytube/privatekeys.pw-source-code](https://github.com/Cryptographytube/privatekeys.pw-source-code)), which already includes #135. Its Top Solvers table
+  matches the per-puzzle list when prizes are taken at the time of each solve. For example, RetiredCoder's 40.2 BTC = #120 1.2 + 12.5 + 13 + 13.5.
+- **Per-puzzle solver list:** [Bradbuythedip/puzzle_data](https://github.com/Bradbuythedip/puzzle_data), a Feb-2025 export in privatekeys.pw's format. It
+  doesn't include #40–#46, #67–#69 or #135.
+- **Methods and hardware:** JeanLucPons/Kangaroo README, RetiredCoder's announcement, and Matthew Green's
+  [bits-of-work-repo](https://github.com/matthewdgreen/bits-of-work-repo) ECDLP records.
+
+The LBC trophies page and the albert0bsd thread were found by web search, but I couldn't open them
+from the sandbox. Check those two links yourself.
 
 ## How the data was built and verified
 
@@ -84,6 +123,13 @@ because they are verified cryptographically. Use the checklist below to confirm 
 - #75: pubkey revealed in 2019
 - #120 / #125 / #130 / #135: RetiredCoder's kangaroo solves. #135 is announced at
   https://bitcointalk.org/index.php?topic=5517607.msg66986617#msg66986617
+
+**D. Attribution**
+- On privatekeys.pw, the Solved tab names a solver per puzzle. Compare it with `solver`, and fill in
+  #40–#46 if the site names anyone.
+- Open https://lbc.cryptoguru.org/trophies and check that it lists #51–#54.
+- Open https://bitcointalk.org/index.php?topic=5365099.0 and check the BitCrack / 248 Gkeys/s figures for #59–#63.
+- On bitboinc, check whether the stats page credits solvers or pools.
 
 If something doesn't match, fix it in `sources/puzzles.json` and rerun `python3 generate_csvs.py`.
 Verification stops the run if the edit breaks the key/pubkey/address relationship.

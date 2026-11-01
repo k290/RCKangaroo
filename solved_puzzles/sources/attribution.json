@@ -1,0 +1,749 @@
+{
+ "1": {
+  "solver": "unnamed; prize sent to address starting 1HdtWQ\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "2": {
+  "solver": "unnamed; prize sent to address starting 1aaRgu\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "3": {
+  "solver": "unnamed; prize sent to address starting 1aaRgu\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "4": {
+  "solver": "unnamed; prize sent to address starting 1aaRgu\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "5": {
+  "solver": "unnamed; prize sent to address starting 1aaRgu\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "6": {
+  "solver": "unnamed; prize sent to address starting 1aaRgu\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "7": {
+  "solver": "unnamed; prize sent to address starting 1aaRgu\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "8": {
+  "solver": "unnamed; prize sent to address starting 1aaRgu\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "9": {
+  "solver": "unnamed; prize sent to address starting 1aaRgu\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "10": {
+  "solver": "unnamed; prize sent to address starting 18dy6J\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "11": {
+  "solver": "unnamed; prize sent to address starting 1KEUP6\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "12": {
+  "solver": "unnamed; prize sent to address starting 1LzgnU\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "13": {
+  "solver": "unnamed; prize sent to address starting 112a7w\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "14": {
+  "solver": "unnamed; prize sent to address starting 1EaFXz\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "15": {
+  "solver": "unnamed; prize sent to address starting 1363mv\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "16": {
+  "solver": "unnamed; prize sent to address starting 187Jz6\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "17": {
+  "solver": "unnamed; prize sent to address starting 1NjGUd\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "18": {
+  "solver": "unnamed; prize sent to address starting 1Hm4wH\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "19": {
+  "solver": "unnamed; prize sent to address starting 1DzcaG\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "20": {
+  "solver": "unnamed; prize sent to address starting 1JLtZF\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "21": {
+  "solver": "unnamed; prize sent to address starting 1aaRgu\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "22": {
+  "solver": "unnamed; prize sent to address starting 12x45A\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "23": {
+  "solver": "unnamed; prize sent to address starting 1aaRgu\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "24": {
+  "solver": "unnamed; prize sent to address starting 12x45A\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "25": {
+  "solver": "unnamed; prize sent to address starting 12x45A\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "26": {
+  "solver": "unnamed; prize sent to address starting 12x45A\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "27": {
+  "solver": "unnamed; prize sent to address starting 12x45A\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "28": {
+  "solver": "unnamed; prize sent to address starting 12x45A\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "29": {
+  "solver": "unnamed; prize sent to address starting 12x45A\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "30": {
+  "solver": "unnamed; prize sent to address starting 18sLsb\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "31": {
+  "solver": "unnamed; prize sent to address starting 12x45A\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "32": {
+  "solver": "unnamed; prize sent to address starting 12x45A\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "33": {
+  "solver": "unnamed; prize sent to address starting 18sLsb\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "34": {
+  "solver": "unnamed; prize sent to address starting 1MLjeM\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "35": {
+  "solver": "unnamed; prize sent to address starting 1HtaAw\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "36": {
+  "solver": "unnamed; prize sent to address starting 18H8sy\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "37": {
+  "solver": "unnamed; prize sent to address starting 1AQk96\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "38": {
+  "solver": "unnamed; prize sent to address starting 18sLsb\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "39": {
+  "solver": "unnamed; prize sent to address starting 1LXyBa\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "40": {
+  "solver": "unknown",
+  "solver_evidence": "{claim_tx}",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "41": {
+  "solver": "unknown",
+  "solver_evidence": "{claim_tx}",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "42": {
+  "solver": "unknown",
+  "solver_evidence": "{claim_tx}",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "43": {
+  "solver": "unknown",
+  "solver_evidence": "{claim_tx}",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "44": {
+  "solver": "unknown",
+  "solver_evidence": "{claim_tx}",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "45": {
+  "solver": "unknown",
+  "solver_evidence": "{claim_tx}",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "46": {
+  "solver": "unknown",
+  "solver_evidence": "{claim_tx}",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "47": {
+  "solver": "unnamed; prize sent to address starting 15L3Hy\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "48": {
+  "solver": "unnamed; prize sent to address starting 15L3Hy\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "49": {
+  "solver": "unnamed; prize sent to address starting 15L3Hy\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "50": {
+  "solver": "unnamed; prize sent to address starting 15L3Hy\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "51": {
+  "solver": "Large Bitcoin Collider (LBC pool)",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "privatekeys.pw credits LBC with 4 solves (1.173 BTC total = #51 0.051 + #52 0.052 + #53 0.53 + #54 0.54)",
+  "solver_notes_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "method": "Brute force via the LBC distributed pool (sequential key enumeration from 1 upward)",
+  "method_evidence": "https://lbc.cryptoguru.org/trophies",
+  "method_basis": "reported: listed on the LBC pool's own trophies page"
+ },
+ "52": {
+  "solver": "Large Bitcoin Collider (LBC pool)",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "privatekeys.pw credits LBC with 4 solves (1.173 BTC total = #51 0.051 + #52 0.052 + #53 0.53 + #54 0.54)",
+  "solver_notes_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "method": "Brute force via the LBC distributed pool (sequential key enumeration from 1 upward)",
+  "method_evidence": "https://lbc.cryptoguru.org/trophies",
+  "method_basis": "reported: listed on the LBC pool's own trophies page"
+ },
+ "53": {
+  "solver": "Large Bitcoin Collider (LBC pool)",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "privatekeys.pw credits LBC with 4 solves (1.173 BTC total = #51 0.051 + #52 0.052 + #53 0.53 + #54 0.54)",
+  "solver_notes_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "method": "Brute force via the LBC distributed pool (sequential key enumeration from 1 upward)",
+  "method_evidence": "https://lbc.cryptoguru.org/trophies",
+  "method_basis": "reported: listed on the LBC pool's own trophies page"
+ },
+ "54": {
+  "solver": "Large Bitcoin Collider (LBC pool)",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "privatekeys.pw credits LBC with 4 solves (1.173 BTC total = #51 0.051 + #52 0.052 + #53 0.53 + #54 0.54)",
+  "solver_notes_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "method": "Brute force via the LBC distributed pool (sequential key enumeration from 1 upward)",
+  "method_evidence": "https://lbc.cryptoguru.org/trophies",
+  "method_basis": "reported: listed on the LBC pool's own trophies page"
+ },
+ "55": {
+  "solver": "unnamed; prize sent to address starting 1AqEgL\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "56": {
+  "solver": "unnamed; prize sent to address starting 1AqEgL\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "57": {
+  "solver": "unnamed; prize sent to address starting 1AqEgL\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "58": {
+  "solver": "unnamed; prize sent to address starting 1DZfjf\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "59": {
+  "solver": "zielar",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "privatekeys.pw credits zielar with 6 solves (#59, #60, #61, #63, #110, #115; 4.68 BTC)",
+  "solver_notes_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "method": "Brute force with BitCrack on GPUs (reported ~248 Gkeys/s, up to ~100 Tesla GPUs)",
+  "method_evidence": "https://bitcointalk.org/index.php?topic=5365099.0",
+  "method_basis": "reported: third-party bitcointalk summary (albert0bsd, 2021), not the solver's own post"
+ },
+ "60": {
+  "solver": "zielar",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "privatekeys.pw credits zielar with 6 solves (#59, #60, #61, #63, #110, #115; 4.68 BTC)",
+  "solver_notes_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "method": "Brute force with BitCrack on GPUs (reported ~248 Gkeys/s, up to ~100 Tesla GPUs)",
+  "method_evidence": "https://bitcointalk.org/index.php?topic=5365099.0",
+  "method_basis": "reported: third-party bitcointalk summary (albert0bsd, 2021), not the solver's own post"
+ },
+ "61": {
+  "solver": "zielar",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "privatekeys.pw credits zielar with 6 solves (#59, #60, #61, #63, #110, #115; 4.68 BTC)",
+  "solver_notes_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "method": "Brute force with BitCrack on GPUs (reported ~248 Gkeys/s, up to ~100 Tesla GPUs)",
+  "method_evidence": "https://bitcointalk.org/index.php?topic=5365099.0",
+  "method_basis": "reported: third-party bitcointalk summary (albert0bsd, 2021), not the solver's own post"
+ },
+ "62": {
+  "solver": "unnamed; prize sent to address starting bc1q05\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "{address_page}",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "63": {
+  "solver": "zielar",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "privatekeys.pw credits zielar with 6 solves (#59, #60, #61, #63, #110, #115; 4.68 BTC)",
+  "solver_notes_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "method": "Brute force with BitCrack on GPUs (reported ~248 Gkeys/s, up to ~100 Tesla GPUs)",
+  "method_evidence": "https://bitcointalk.org/index.php?topic=5365099.0",
+  "method_basis": "reported: third-party bitcointalk summary (albert0bsd, 2021), not the solver's own post"
+ },
+ "64": {
+  "solver": "unnamed; prize sent to address starting 36X5Cc\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "https://github.com/matthewdgreen/bits-of-work-repo/blob/HEAD/records/ecdlp/btc-puzzle-064.yaml",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "65": {
+  "solver": "unnamed; prize sent to address starting 3GVSoQ\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "ECDLP on the public key exposed 2019-06-01 (Pollard kangaroo or BSGS); tool not published",
+  "method_evidence": "{reveal_tx}",
+  "method_basis": "inferred: solved shortly after the 2019 pubkey reveal; a scan of this range in that time is infeasible"
+ },
+ "66": {
+  "solver": "1Jvv4yWkE9MhbuwGUoqFYzDjRVQHaLWuJd (unnamed)",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "Finder's public broadcast was front-run: the tx was replaced and 5.94 BTC went to bc1qpk\u2026, then 15XVN6\u2026 took 0.66 BTC",
+  "solver_notes_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "https://github.com/matthewdgreen/bits-of-work-repo/blob/HEAD/records/ecdlp/btc-puzzle-066.yaml",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "67": {
+  "solver": "Kowala",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "privatekeys.pw credits Kowala with #67 and #68 (13.5 BTC). Claims were mined without the public mempool to avoid front-running",
+  "solver_notes_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "https://github.com/matthewdgreen/bits-of-work-repo/blob/HEAD/records/ecdlp/btc-puzzle-067.yaml",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "68": {
+  "solver": "Kowala",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "privatekeys.pw credits Kowala with #67 and #68 (13.5 BTC). Claims were mined without the public mempool to avoid front-running",
+  "solver_notes_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "https://github.com/matthewdgreen/bits-of-work-repo/blob/HEAD/records/ecdlp/btc-puzzle-068.yaml",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "69": {
+  "solver": "bc1qlp0z45ctphhz0kywpmw3x2kjy7umhyfawxctah (unnamed)",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "Key was ~0.72% into the range. Public broadcast was front-run by bots (prize largely taken by replacement txs)",
+  "solver_notes_evidence": "https://github.com/roadhero/Bitcoin-Puzzle-Info",
+  "method": "Brute force: scan the key range, hash each pubkey, compare HASH160 with the address",
+  "method_evidence": "https://github.com/matthewdgreen/bits-of-work-repo/blob/HEAD/records/ecdlp/btc-puzzle-069.yaml",
+  "method_basis": "inferred: no public key was on chain before the solve, so only a key-range scan was possible"
+ },
+ "70": {
+  "solver": "pikachunakapika",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "privatekeys.pw credits pikachunakapika with 5 solves (#70-#90; 4 BTC)",
+  "solver_notes_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "method": "ECDLP on the public key exposed 2019-06-01 (Pollard kangaroo or BSGS); tool not published",
+  "method_evidence": "{reveal_tx}",
+  "method_basis": "inferred: solved shortly after the 2019 pubkey reveal; a scan of this range in that time is infeasible"
+ },
+ "75": {
+  "solver": "pikachunakapika",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "privatekeys.pw credits pikachunakapika with 5 solves (#70-#90; 4 BTC)",
+  "solver_notes_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "method": "ECDLP on the public key exposed 2019-06-01 (Pollard kangaroo or BSGS); tool not published",
+  "method_evidence": "{reveal_tx}",
+  "method_basis": "inferred: solved shortly after the 2019 pubkey reveal; a scan of this range in that time is infeasible"
+ },
+ "80": {
+  "solver": "pikachunakapika",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "privatekeys.pw credits pikachunakapika with 5 solves (#70-#90; 4 BTC)",
+  "solver_notes_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "method": "ECDLP on the public key exposed 2019-06-01 (Pollard kangaroo or BSGS); tool not published",
+  "method_evidence": "{reveal_tx}",
+  "method_basis": "inferred: solved shortly after the 2019 pubkey reveal; a scan of this range in that time is infeasible"
+ },
+ "85": {
+  "solver": "pikachunakapika",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "privatekeys.pw credits pikachunakapika with 5 solves (#70-#90; 4 BTC)",
+  "solver_notes_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "method": "ECDLP on the public key exposed 2019-06-01 (Pollard kangaroo or BSGS); tool not published",
+  "method_evidence": "{reveal_tx}",
+  "method_basis": "inferred: solved shortly after the 2019 pubkey reveal; a scan of this range in that time is infeasible"
+ },
+ "90": {
+  "solver": "pikachunakapika",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "privatekeys.pw credits pikachunakapika with 5 solves (#70-#90; 4 BTC)",
+  "solver_notes_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "method": "ECDLP on the public key exposed 2019-06-01 (Pollard kangaroo or BSGS); tool not published",
+  "method_evidence": "{reveal_tx}",
+  "method_basis": "inferred: solved shortly after the 2019 pubkey reveal; a scan of this range in that time is infeasible"
+ },
+ "95": {
+  "solver": "unnamed; prize sent to address starting 1AmDbs\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "ECDLP on the public key exposed 2019-06-01 (Pollard kangaroo or BSGS); tool not published",
+  "method_evidence": "{reveal_tx}",
+  "method_basis": "inferred: solved shortly after the 2019 pubkey reveal; a scan of this range in that time is infeasible"
+ },
+ "100": {
+  "solver": "unnamed; prize sent to address starting 125CWt\u2026",
+  "solver_evidence": "https://github.com/Bradbuythedip/puzzle_data/blob/HEAD/bitcoin_puzzle_solutions.txt",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "ECDLP on the public key exposed 2019-06-01 (Pollard kangaroo or BSGS); tool not published",
+  "method_evidence": "{reveal_tx}",
+  "method_basis": "inferred: solved shortly after the 2019 pubkey reveal; a scan of this range in that time is infeasible"
+ },
+ "105": {
+  "solver": "57fe",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "",
+  "solver_notes_evidence": "",
+  "method": "ECDLP on the exposed public key, probably Pollard kangaroo (57fe publishes a GPU kangaroo tool)",
+  "method_evidence": "https://github.com/57fe/Pollard-Rho-Kangaroo",
+  "method_basis": "inferred: solver attribution + solver's public kangaroo tool; method not stated for #105"
+ },
+ "110": {
+  "solver": "zielar with Jean-Luc Pons",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "privatekeys.pw credits zielar. Wikipedia's discrete-log records (via Matthew Green's records) name Jean-Luc Pons and Aleksander Zieniewicz (zielar)",
+  "solver_notes_evidence": "https://github.com/matthewdgreen/bits-of-work-repo/blob/HEAD/records/ecdlp/btc-puzzle-110.yaml",
+  "method": "Pollard kangaroo, JeanLucPons/Kangaroo, 256 Tesla V100, 2.1 days, 2^55.55 group ops",
+  "method_evidence": "https://github.com/JeanLucPons/Kangaroo#distributed-clients-and-central-servers",
+  "method_basis": "stated: Kangaroo README says 'This program solved puzzle #110 \u2026 #115'"
+ },
+ "115": {
+  "solver": "zielar with Jean-Luc Pons",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "privatekeys.pw credits zielar. Wikipedia's discrete-log records (via Matthew Green's records) name Jean-Luc Pons and Aleksander Zieniewicz (zielar)",
+  "solver_notes_evidence": "https://github.com/matthewdgreen/bits-of-work-repo/blob/HEAD/records/ecdlp/btc-puzzle-115.yaml",
+  "method": "Pollard kangaroo, JeanLucPons/Kangaroo, 256 Tesla V100, 13 days, 2^58.36 group ops",
+  "method_evidence": "https://github.com/JeanLucPons/Kangaroo#distributed-clients-and-central-servers",
+  "method_basis": "stated: Kangaroo README says 'This program solved puzzle #110 \u2026 #115'"
+ },
+ "120": {
+  "solver": "RetiredCoder",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "RetiredCoder's GitHub profile claims #120, #125, #130 and #135",
+  "solver_notes_evidence": "https://github.com/RetiredC",
+  "method": "Pollard kangaroo on GPUs with the solver's own code (RCKangaroo family); hardware/time not published",
+  "method_evidence": "https://github.com/matthewdgreen/bits-of-work-repo/blob/HEAD/records/ecdlp/btc-puzzle-120.yaml",
+  "method_basis": "reported: solver claims the solve; method per Matthew Green's records"
+ },
+ "125": {
+  "solver": "RetiredCoder",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "RetiredCoder's GitHub profile claims #120, #125, #130 and #135",
+  "solver_notes_evidence": "https://github.com/RetiredC",
+  "method": "Pollard kangaroo on GPUs with the solver's own code (RCKangaroo family); hardware/time not published",
+  "method_evidence": "https://github.com/matthewdgreen/bits-of-work-repo/blob/HEAD/records/ecdlp/btc-puzzle-125.yaml",
+  "method_basis": "reported: solver claims the solve; method per Matthew Green's records"
+ },
+ "130": {
+  "solver": "RetiredCoder",
+  "solver_evidence": "https://github.com/Cryptographytube/privatekeys.pw-source-code/blob/HEAD/puzzles/bitcoin-puzzle-tx/index.html",
+  "solver_notes": "RetiredCoder's GitHub profile claims #120, #125, #130 and #135",
+  "solver_notes_evidence": "https://github.com/RetiredC",
+  "method": "Pollard kangaroo on GPUs with the solver's own code (RCKangaroo family); hardware/time not published",
+  "method_evidence": "https://github.com/matthewdgreen/bits-of-work-repo/blob/HEAD/records/ecdlp/btc-puzzle-130.yaml",
+  "method_basis": "reported: solver claims the solve; method per Matthew Green's records"
+ },
+ "135": {
+  "solver": "RetiredCoder",
+  "solver_evidence": "https://bitcointalk.org/index.php?topic=5517607.msg66986617#msg66986617",
+  "solver_notes": "Solver's announcement: about 5 months on 200 GPUs; quit afterwards",
+  "solver_notes_evidence": "https://bitcointalk.org/index.php?topic=5517607.msg66986617#msg66986617",
+  "method": "Pollard kangaroo with symmetry (RCKangaroo, ASM turbo kernels), ~200 GPUs for ~5 months",
+  "method_evidence": "https://bitcointalk.org/index.php?topic=5517607.msg66986617#msg66986617",
+  "method_basis": "stated: solver's bitcointalk announcement"
+ }
+}
